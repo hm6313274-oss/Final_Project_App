@@ -260,7 +260,7 @@ pip install -r requirements.txt
 ### Run the Backend
 
 ```bash
-uvicorn app.main:app --reload
+uvicorn main:app --reload
 ```
 
 The API will be available at:
@@ -314,6 +314,7 @@ curl -X POST "http://localhost:8000/predict" \
     "ownership": "Freehold",
     "facing": "North"
   }'
+```
 
 Example request:
 
