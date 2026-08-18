@@ -88,44 +88,59 @@ Frontend Result Page
 ## 📂 Project Structure
 
 ```text
-House-Price-Prediction/
+Final_Project_App/
 │
 ├── backend/
 │   ├── app/
-│   │   ├── main.py
 │   │   ├── api/
+│   │   │   └── routes/
+│   │   │       └── prediction.py
 │   │   ├── core/
+│   │   │   └── config.py
 │   │   ├── schemas/
+│   │   │   └── prediction.py
 │   │   ├── services/
-│   │   └── utils/
+│   │   │   ├── inference.py
+│   │   │   └── preprocessing.py
+│   │   ├── utils/
+│   │   │   └── logging_config.py
+│   │   └── main.py
 │   │
 │   ├── models/
-│   │   └── house_price.pkl
+│   │   ├── house_price.pkl
+│   │   └── locations.json
 │   │
 │   ├── tests/
 │   │   └── test_prediction.py
 │   │
 │   ├── requirements.txt
-│   ├── .env.example
-│   └── Dockerfile
+│   ├── Dockerfile
+│   └── .env.example
 │
 ├── frontend/
-│   ├── public/
 │   ├── src/
 │   │   ├── api/
 │   │   ├── components/
 │   │   ├── pages/
 │   │   ├── types/
 │   │   └── App.tsx
-│   │
 │   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.ts
 │   └── .env.example
 │
 ├── notebooks/
 │   ├── house_price_model.ipynb
 │   ├── house_price.pkl
 │   └── locations.json
+|
+|
+├── screenshots/
+│   ├── home-page.png
+│   ├── result-page.png
+│   └── ...
 │
+├── main.py
 ├── .gitignore
 └── README.md
 ```
