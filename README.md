@@ -379,19 +379,14 @@ http://localhost:5173
 
 ### Home Page
 
-Add a screenshot of the prediction form here.
-
-```text
 ![Home Page](screenshots/home-page.png)
-```
+
 
 ### Prediction Result
 
-Add a screenshot of the prediction result here.
 
-```text
-![Home Page](screenshots/home-page.jpg)
-```
+![Prediction Result](screenshots/result-page.png)
+
 
 ---
 
