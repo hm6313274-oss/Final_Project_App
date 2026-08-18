@@ -1,7 +1,10 @@
 # Python
 .venv/
 __pycache__/
+*.py[cod]
 *.log
+
+# Environment
 .env
 
 # Node.js
@@ -10,3 +13,6 @@ dist/
 
 # Data
 *.csv
+
+# Jupyter
+.ipynb_checkpoints/
