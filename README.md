@@ -298,6 +298,22 @@ Example response:
 ```text
 POST /predict
 ```
+### cURL Example
+
+```bash
+curl -X POST "http://localhost:8000/predict" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "location": "aurangabad",
+    "carpet_area_sqft": 600,
+    "floor_num": 4,
+    "bathroom": 2,
+    "balcony": 3,
+    "furnishing": "Furnished",
+    "transaction": "New Property",
+    "ownership": "Freehold",
+    "facing": "North"
+  }'
 
 Example request:
 
@@ -338,13 +354,11 @@ cd frontend
 npm install
 ```
 
-### Environment Variable
+### Environment Variables
 
-Create a `.env` file:
-
-```env
-VITE_API_BASE_URL=http://localhost:8000
-```
+| Variable | Description | Example |
+|---|---|---|
+| `VITE_API_BASE_URL` | Base URL of the FastAPI backend | `http://localhost:8000` |
 
 The `.env` file is not committed to GitHub.
 
