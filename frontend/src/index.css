@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fa;
+  color: #1f2937;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.prediction-form,
+.result-card {
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.prediction-form h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.result-card {
+  max-width: 650px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.result-card h1 {
+  margin-top: 0;
+}
+
+.price {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 25px 0;
+}
+
+.button-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button-link:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 20px 12px;
+  }
+
+  .prediction-form,
+  .result-card {
+    padding: 20px;
+  }
+
+  .price {
+    font-size: 30px;
+  }
+}

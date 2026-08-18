@@ -1,0 +1,12 @@
+# Python
+.venv/
+__pycache__/
+*.log
+.env
+
+# Node.js
+node_modules/
+dist/
+
+# Data
+*.csv
